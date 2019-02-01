@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey</title>
+    <meta name="author" content="Tiffany Ray">
+    <meta name="description" content="basic survey form">
+    <meta name="keywords" content="survey form">
+    <link href="surveyformss.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header>Survey Form</header>
+    
+    <div class="maindiv">
+      <form>
+         <p class="center">Let us know how we can improve!</p>
+      <div class="grid">
+        <div class="left">
+          <label for="name"><p>*Name:</p></label>
+        </div>
+        <div class="right">
+          <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="left">
+          <label for="email"><p>*Email:</p></label>
+        </div>
+        <div class="right">
+          <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="left">
+          <label for="age"><p>*Age:</p></label>
+        </div>
+        <div class="right">
+          <input id="age" type="number" name="age" placeholder="What is your age?" required>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="left">
+          <label for="current_role"><p>Which option best describes your current role?</p></label>
+        </div>
+        <div class="right">
+          <select id="current_role" name="current role">
+            <option value="student">Student</option>
+            <option value="fulltime job">Full Time Job</option>
+            <option value="fulltime learner">Full Time Learner</option>
+            <option value="prefer not to say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="left">
+          <label for="recommend"><p>*How likely is that you would recommend this site to a friend?</p></lebel>
+        </div>
+        <div class="right">
+          <input type="radio" name="recommend" value="definitely">Definitely
+          <input type="radio" name="recommend" value="maybe">Maybe
+          <input type="radio" name="recommend" value="not sure">Not sure
+        </div>
+      </div>
+      <div class="grid">
+        <div class="left">
+          <label for="like_most"><p>What do you like most in this company:</p></label>
+        </div>
+        <div class="right">
+          <select id="like_most" name="like most">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="left">
+          <label for="future"><p>Things that should be improved in the future:</p></label>
+        </div>
+        <div class="right">
+          <input id="future" type="checkbox" name="future" value="1" />1
+          <input id="future" type="checkbox" name="future" value="2" />2
+          <input id="future" type="checkbox" name="future" value="3" />3
+        </div>
+      </div>
+      <div class="grid">
+        <div class="left">
+          <label for="comments"><p>Any Comments or Suggestions?</p></label>
+          </div>
+          <div class="right">
+          <textarea id="comments" class="right" name="comments">Enter your comment here...</textarea>
+        </div>
+      </div>
+      <div class="button">
+        <button>Submit Form</button>
+      </div>
